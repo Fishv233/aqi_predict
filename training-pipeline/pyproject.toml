@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "training_pipeline"
+version = "0.1.0"
+description = ""
+authors = ["Ben <z7624111@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.10,<3.13"
+fire = "^0.6.0"
+pandas = ">2.0.0,<2.2.0"
+python-dotenv = "^1.0.1"
+hopsworks = "^3.7.0"
+wandb = "^0.17.6"
+matplotlib = "^3.9.1.post1"
+joblib = "^1.4.2"
+scikit-learn = "^1.5.1"
+lightgbm = "^4.5.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
