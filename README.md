@@ -95,10 +95,17 @@ The web interface is built using:
 5. **Deploy Pipeline**
    - Execute `ml-pipeline.sh` in the deploy directory to monitor pipeline processes in the Airflow DAGs
 
+6. **Start API Services**
+   ```bash
+   # Deploy API services
+   docker compose -f deploy/app-docker-compose.yml --project-directory . up --build
+   ```
+
 ### Important Notes
 - The data pipeline requires a private PyPI server (configured in `airflow/docker-compose.yaml`)
 - Ensure PyPI server credentials are properly set up before starting Docker services
 - Monitor pipeline progress through the Airflow DAGs interface
+- API services will be available after running the API deployment command
 
 ## Usage
 [Usage instructions placeholder]

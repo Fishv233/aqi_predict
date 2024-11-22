@@ -26,3 +26,6 @@ airflow/dags/water-stimulation-25dc4ad91d2e.json
 airflow/dags/__pycache__/
 airflow/dags/output/
 airflow/logs/
+app-api/.env
+app-api/water-stimulation-25dc4ad91d2e.json
+app-api/api/__init__.py
