@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "feature-pipeline"
+version = "0.1.0"
+description = ""
+authors = ["Ben <z7624111@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.10,<3.13"
+fire = "^0.6.0"
+pandas = ">2.0.0,<2.2.0"
+python-dotenv = "^1.0.1"
+hopsworks = "^3.7.0"
+requests = "^2.31.0"
+passlib = "^1.7.4"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

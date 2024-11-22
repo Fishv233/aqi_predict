@@ -1,0 +1,20 @@
+
+{
+  "feature_view_name": "aqi_feature_view",
+
+  "required_feature": ["sitename","aqi","pollutant","so2","so2_avg",
+                      "co","o3","pm10","pm2.5",
+                      "no2","windspeed","pm2.5_avg","pm10_avg"
+                      ],
+
+  "feature_group_description":{
+      "name": "aqi_feature_group",
+      "version": 1,
+      "description": "aqi_feature_group.",
+      "primary_key": ["sitename","ts"],
+      "event_time": "ts",
+      "datetime_format": "%Y-%m-%d %H:%M:%S",
+      "online_enabled": false
+  }
+
+}
