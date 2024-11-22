@@ -9,7 +9,6 @@ logger = utils.get_logger(__name__)
 
 
 def run(
-    url: str = "https://drive.google.com/uc?export=download&id=1y48YeDymLurOTUO-GeFOUXVNc9MCApG5",
     config: dict = None
 ) -> dict:
     """
@@ -30,16 +29,11 @@ def run(
     logger.info(f'cleaned_data: {data.head()}')
     logger.info("Successfully transformed data.")
 
-    # data_validation
-    # logger.info("Building validation expectation suite.")
-    # validation_expectation_suite = validation.build_expectation_suite()
-    # logger.info("Successfully built validation expectation suite.")
 
     # data_load
     logger.info("Validating data and loading it to the feature store.")
     data_loader.to_feature_store(
         data,
-        # validation_expectation_suite=validation_expectation_suite,
         config=config['feature_group_description']
     )
     metadata["feature_group_version"] = config['feature_group_description']['version']
@@ -54,6 +48,6 @@ def run(
 
 
 if __name__ == "__main__":
-    config = json.load(open(r'D:\ben\AI\ai_pipeline\feature-pipeline\feature_pipeline\configs\config.json'))
+    config = None
     fire.Fire(run(config=config))
     # create feature view
