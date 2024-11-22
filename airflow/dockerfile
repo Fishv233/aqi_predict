@@ -1,0 +1,14 @@
+FROM apache/airflow:2.7.0-python3.10
+USER root
+
+RUN apt-get update -y
+RUN apt-get install -y build-essential
+# RUN apt-get install -y   python-dev
+# 確認 Python 3.10 已安裝並可用
+RUN python3.10 --version
+# RUN apt-get install -y python3-distutils
+
+
+USER airflow
+RUN pip install virtualenv
+RUN pip install --upgrade pip setuptools
