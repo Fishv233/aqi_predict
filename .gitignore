@@ -20,3 +20,9 @@ batch-prediction-pipeline/batch_prediction_pipeline/modules/__init__.py
 batch-prediction-pipeline/batch_prediction_pipeline/modules/__pycache__/
 batch-prediction-pipeline/dist/
 batch-prediction-pipeline/batch_prediction_pipeline/configs/
+airflow/.htpasswd/
+airflow/dags/.env
+airflow/dags/water-stimulation-25dc4ad91d2e.json
+airflow/dags/__pycache__/
+airflow/dags/output/
+airflow/logs/
