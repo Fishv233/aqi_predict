@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "batch-prediction-pipeline"
+version = "0.1.0"
+description = ""
+authors = ["Ben <z7624111@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.10,<3.13"
+hopsworks = "^3.7.0"
+matplotlib = "^3.9.2"
+scikit-learn = "^1.5.1"
+python-dotenv = "^1.0.1"
+google-cloud-storage = "^2.18.2"
+lightgbm = "^4.5.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

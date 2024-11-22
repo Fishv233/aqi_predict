@@ -15,3 +15,8 @@ training-pipeline/training_pipeline/__pycache__/
 training-pipeline/training_pipeline/modules/__init__.py
 training-pipeline/training_pipeline/modules/__pycache__/__init__.cpython-310.pyc
 training-pipeline/training_pipeline/modules/__pycache__/
+batch-prediction-pipeline/batch_prediction_pipeline/__init__.py
+batch-prediction-pipeline/batch_prediction_pipeline/modules/__init__.py
+batch-prediction-pipeline/batch_prediction_pipeline/modules/__pycache__/
+batch-prediction-pipeline/dist/
+batch-prediction-pipeline/batch_prediction_pipeline/configs/
