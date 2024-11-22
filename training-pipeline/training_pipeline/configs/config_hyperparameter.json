@@ -1,0 +1,14 @@
+{
+  "hyperparameter_tuning": {
+    "method": "grid",
+    "metric": {
+      "name": "validation.MAPE",
+      "goal": "minimize"
+    },
+    "parameters": {
+      "learning_rate": {"values": [0.01, 0.1, 0.3]},
+      "lambda_l1": {"values": [0, 0.1, 0.5]},
+      "lambda_l2": {"values": [0, 0.1, 1.0]}
+    }
+  }
+}
