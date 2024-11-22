@@ -12,22 +12,19 @@ The data processing module is divided into three main pipelines:
 All pipeline workflows are orchestrated using Apache Airflow and deployed using Docker containers.
 
 ### 2. Web System Module
-The web interface is built using:
-- FastAPI for backend services
-- Streamlit for frontend visualization
+The web system consists of two main components:
+- **Backend API (FastAPI)**: Handles data processing and model predictions
+- **Frontend Dashboard (Streamlit)**: Provides interactive visualization and user interface
+
+![Web System Architecture](./docs/images/圖片1.png)
+*Web demonstration*
 
 ## System Architecture
-[Diagram placeholder]
 
-## Getting Started
-[Installation instructions placeholder]
+### Data pipeline
+![System Architecture](./docs/images/圖片2.png)
 
-## Prerequisites
-- Docker
-- Python 3.x
-- Apache Airflow
-- FastAPI
-- Streamlit
+
 
 ## Installation
 
@@ -107,19 +104,5 @@ The web interface is built using:
 - Monitor pipeline progress through the Airflow DAGs interface
 - API services will be available after running the API deployment command
 
-## Usage
-[Usage instructions placeholder]
-
-## Pipeline Details
-[Pipeline documentation placeholder]
-
-## Web Interface
-[Web interface documentation placeholder]
-
-## Contributing
-[Contributing guidelines placeholder]
-
-## License
-[License information placeholder]
 
 
